@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Presentation}
+\cvsection{Research Project}
 
 
 %-------------------------------------------------------------------------------
@@ -10,15 +10,48 @@
 \begin{cventries}
 
 %---------------------------------------------------------
-  \cventry
-    {Presenter for <DEFCON 20th : The way to go to Las Vegas>} % Role
-    {6th CodeEngn (Reverse Engineering Conference)} % Event
-    {Seoul, S.Korea} % Location
-    {Jul. 2012} % Date(s)
+  \paperentry
+    {SGX-Shield: Enabling Address Space Layout Randomization for SGX Programs} % Role
+    {} % Event
     {
-      \begin{cvitems} % Description(s)
-        \item {Introduced CTF(Capture the Flag) hacking competition and advanced techniques and strategy for CTF}
-      \end{cvitems}
+        \begin{cvitems} % Description(s)
+        \item {SGX-Shield is a system (compiler toolchains and runtime support)
+            to enable ASLR (Address Space Layout Randomization) for SGX programs.}
+        \item {Jaebaek Seo alone implemented all compiler toolchains including
+                LLVM backends, static linker and dynamic loader/linker and runtime
+            support including libraries and memory layout.}
+        \item {The paper is still under review for publication.}
+        \item {\url{https://github.com/jaebaek/SGX-Shield}}
+        \end{cvitems}
+    }
+
+  \paperentry
+    {FLEXDROID: Enforcing In-App Privilege Separation in Android} % Role
+    {} % Date(s)
+    {
+        \begin{cvitems} % Description(s)
+        \item {FlexDroid is an extension of Android permission system
+            to support in-app privilege separation.}
+        \item {Jaebaek Seo alone engineered memory permission part in kernel,
+            Dalvik JVM, Android framework, dynamic loader/linker.}
+        \item {\url{https://github.com/flexdroid}}
+        \item {This work is published in Proceedings of the 2016 Network and
+                Distributed System Security Symposium (\textbf{NDSS 2016},
+                Acceptance ratio: 60/389=15.4\%).}
+        \item {Jaebaek Seo is the first author of the paper.}
+        \end{cvitems}
+    }
+
+  \paperentry
+    {Optimal Real-Time Scheduling on Two-Type Heterogeneous Multicore Platforms} % Role
+    {} % Date(s)
+    {
+        \begin{cvitems} % Description(s)
+        \item {Jaebaek Seo contributed to prove mathmatical theorems.}
+        \item{This work is published in Proceedings of the 36th IEEE Real-Time
+                Systems Symposium (RTSS 2015, Acceptance ratio: 34/151=22.5\%)}
+            \item {Jaebaek Seo is the second author of the paper.}
+            \end{cvitems}
     }
 
 %---------------------------------------------------------
