@@ -1,6 +1,10 @@
 .PHONY: examples
 
-examples: $(foreach x,coverletter cv resume,examples/$x.pdf)
+all: resume.pdf
 
-%.pdf: %.tex
-	xelatex -output-directory=$(dir $@) $<
+TEXFILES = resume.tex aboutme.tex education.tex \
+		   experience.tex research.tex          \
+		   extracurricular.tex honors.tex
+
+resume.pdf: $(TEXFILES)
+	xelatex $<
