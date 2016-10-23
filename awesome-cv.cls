@@ -126,6 +126,7 @@
 \definecolor{green}{HTML}{C2E15F}
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{D3A4F9}
+\definecolor{purple2}{HTML}{634499}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
 % Text colors
@@ -227,6 +228,9 @@
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
 
+% For elements of paper
+\newcommand*{\papertitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{purple2} #1}}
+\newcommand*{\paperdescriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
@@ -548,13 +552,15 @@
   \end{tabular*}%
 }
 
-\newcommand*{\paperentry}[3]{%
+\newcommand*{\paperentry}[4]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-      \entrytitlestyle{#1} & \entrydatestyle{#2} \\
-      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#3}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 0.5cm} R{0.5cm}}
+      \papertitlestyle{#1} \\
+      \paperdescriptionstyle{#2} \\
+      \paperdescriptionstyle{#3} \\
+      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#4}}
   \end{tabular*}%
 }
 
